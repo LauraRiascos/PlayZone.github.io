@@ -1,0 +1,393 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: calc(5px + .4vw);
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: calc(6px + .4vw);
+    }
+    
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #000;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+}
+
+#title-explain{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+
+.title-RE, .text-RE{
+    color: #fff;
+}
+
+.banner-resident {
+    background: url(../images/residentevilremake.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.btn-containerRE{
+   position: absolute;
+   padding: 120px 95px;
+   bottom: 0;
+}
+
+.btn-RE4 {
+   cursor: pointer;
+   display: inline-block;
+   border: 0;
+   border-radius: 6px;
+   font-weight: bold;
+   padding: 5px 20px 5px 22px;
+   background: #f4f4f4;
+   color: #333;
+   font-size: 15px;
+   margin-bottom: 3px;
+   margin-right: 10px;
+   position: relative;
+   z-index: 1;
+ }
+ 
+ .btn-RE4:hover {
+   background: #262626;
+   color: #fff;
+ }
+
+#text-nav{
+   color: #fff;
+}
+
+#icon-nav{
+   color: #fff;
+}
+
+
+
+/* .banner-resident::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+} */
+
+.banner-resident h1 {
+    text-align: left;
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    padding: 100px 80px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-resident p {
+    text-align: left;
+    font-size: 17px;
+    padding: 0px 80px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    margin-top: 3rem;
+}
+
+.texto-imagen-RE {
+ background: url(../images/bosqueresident.jpg);
+ background-size: cover;
+ background-position: center;
+ height: 600px;
+ margin-bottom: 30px;
+ margin-top: 30px;
+}
+
+.texto-imagen-RE::before {
+ content: "";
+ display: block;
+ position: absolute;
+ width: 100%;
+ height: 81%;
+ /* top: 0; */
+ left: 0;
+ background-color: rgb(0 0 0 / 33%);
+ /* Ajusta el valor al color y opacidad deseada */
+}
+
+.texto-imagen-RE h1 {
+ text-align: left;
+ font-size: 35px;
+ color: #fff;
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+ padding: 150px 80px 0px;
+ position: relative;
+ z-index: 1;
+}
+
+.texto-imagen-RE p {
+ text-align: left;
+ font-size: 17px;
+ padding: 0px 80px;
+ color: #ffffff;
+ position: relative;
+ z-index: 1;
+ margin-top: 3rem;
+}
+
+.container-gow {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* width: 90%; */
+    margin: auto;
+}
+
+.footer-gow {
+   width: 100%;
+   padding: 50px 0px;
+   background-image: url(../images/background-footer-blackk.png) !important;
+   background-size: cover;
+ }
+ 
+ .container__footer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: auto;
+   margin-top: 100px;
+ }
+ 
+ .box__footer {
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+ }
+ 
+ .box__footer .logo img {
+   width: 210px;
+ }
+ 
+ .box__footer .terms {
+   max-width: 350px;
+   margin-top: 20px;
+   font-weight: 500;
+   color: #7a7a7a;
+   font-size: 18px;
+ }
+ 
+ .box__footer h2 {
+   font-size: 15pt;
+   margin-bottom: 10px;
+   color: #ffffff;
+   font-weight: 700;
+ }
+ 
+ .box__footer a {
+   margin-top: 10px;
+   color: #ffffff;
+   font-weight: 600;
+ }
+ 
+ .box__footer a:hover {
+   opacity: 0.8;
+ }
+ 
+ .box__footer a .fab {
+   font-size: 20px;
+ }
+ 
+ .box__copyright {
+   max-width: 1200px;
+   margin: auto;
+   text-align: center;
+   padding: 0px 40px;
+ }
+ 
+ .box__copyright p {
+   margin-top: 20px;
+   color: #7a7a7a;
+ }
+ 
+ .box__copyright hr {
+   border: none;
+   height: 1px;
+   background-color: #7a7a7a;
+ }
+
+@media only screen and (min-width: 768px) {
+    .container-gow {
+        flex-direction: row;
+    }
+}
+
+.container-texto {
+ position: relative;
+ width: 100%;
+}
+
+.texto {
+ position: absolute;
+ top: 50%;
+ left: 0;
+ transform: translate(0, -50%);
+ text-align: center;
+ padding: 10px;
+ color: white;
+ font-size: 35px;
+}
+
+
+.container-explain,.container-explain1 {
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1700px;
+   margin-left: 200px;
+   padding: 50px;
+ }
+ 
+ .text {
+   padding: 60px;
+   flex-basis: 100%;
+   color: #fff;
+ }
+
+ .image-gow{
+   width: 45%;
+ }
+
+ .text1 {
+   padding: 60px;
+   flex-basis: 100%;
+   color: #fff;
+   margin-left: -20em;
+ }
+
+ .image-gow1{
+   width: 45%;
+   margin-left: 4em;
+ }
+ 
+ .image {
+   flex-basis: 100%;
+   padding: 10px;
+ }
+ 
+ @media screen and (min-width: 768px) {
+
+   .text, .text1 {
+     flex-basis: 50%;
+   }
+   
+ 
+   .image,.image1 {
+     flex-basis: 50%;
+   }
+ }
+ 
+ @media screen and (min-width: 992px) {
+
+   .text, .text1 {
+     flex-basis: 40%;
+   }
+ 
+   .image, .image1 {
+     flex-basis: 60%;
+   }
+ }
+ 
+
+@media only screen and (min-width: 768px) {
+    .column--active .column-inner {
+        width: 70%;
+    }
+}
+
+.column--active:hover {
+    cursor: initial;
+}
+
+.column-heading {
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 700px){
+   .main-nav ul.main-menu{
+       background: #000;
+   }
+
+   .container-explain{
+       margin: auto;
+       margin-top: 10px;
+       padding: 5px !important;
+   }
+
+   .container-explain1{
+       margin-left: 10px;
+       flex-direction: column-reverse;
+       padding: 5px !important;
+   }
+
+   .image{
+       margin-top: 10px;
+       
+   }
+
+   .text{
+       padding: 20px;
+   }
+
+   .image-gow{
+       width: 90%;
+       margin-left: 20px;
+   }
+
+   .image1{
+       margin-top: 10px;
+       
+   }
+
+   .text1{
+       padding: 20px;
+       margin-left: 10px;
+   }
+
+   .image-gow1{
+       width: 90%;
+       margin-left: 20px;
+   }
+
+
+}

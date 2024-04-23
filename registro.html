@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="96x96" />
+    <link rel="stylesheet" href="css/registro.css">
+    <script>
+        let datos = [];
+        let btn, txt_validacion;
+        window.onload = () => {
+            btn = document.getElementById("btn_enviar");
+            txt_validacion = document.getElementById("texto_validacion");
+            btn.addEventListener("click", procesarDatos);
+        }
+        function procesarDatos(event) {
+            let usuario, nombre, clave, email, bandera = false,
+                html = "Error, verifica: <br><ul>";
+            usuario = document.getElementById("usuario");
+            nombre = document.getElementById("nombre");
+            clave = document.getElementById("clave");
+            email = document.getElementById("email");
+            event.preventDefault();//Evita que el submit envie datos al servidor
+            console.log(usuario.value, nombre.value, clave.value, email.value);
+            if (usuario.value == "") {
+                html += "<li>El usuario </li>";
+                bandera = true;
+            }
+            if (nombre.value == "") {
+                html += "<li>El Nombre </li>";
+                bandera = true;
+            }
+            if (clave.value == "") {
+                html += "<li>La clave </li>"
+                bandera = true;
+            }
+            if (email.value == "") {
+                html += "<li>El email </li>"
+                bandera = true;
+            }
+            if (bandera) {
+                txt_validacion.innerHTML = html + "<br>";
+            }
+            else {
+                guardarDatos({
+                    nombre: nombre.value,
+                    usuario: usuario.value,
+                    clave: clave.value,
+                    email: email.value
+                });
+            }
+        }
+        function clear() {
+            let usuario, nombre, clave, email;
+            usuario = document.getElementById("usuario");
+            nombre = document.getElementById("nombre");
+            clave = document.getElementById("clave");
+            email = document.getElementById("email");
+            txt_validacion.innerHTML = "";
+            usuario.value = "";
+            nombre.value = "";
+            clave.value = "";
+            email.value = "";
+        }
+        function redireccion() {
+            location.href = "login.html";
+        }
+        function guardarDatos(obj) {
+            localStorage.setItem("usuario", JSON.stringify(obj));
+            redireccion();
+        }
+    </script>
+    <title>Crear cuenta</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class='col-md-9 card mx-auto d-flex flex-row px-0'>
+
+            <div class="img-left d-md-flex d-none"></div>
+
+            <div class="card-body d-flex flex-column justify-content-center">
+                <a href="index.html"><img id="logo" src="images/playzone.png" width="220"></a>
+                <h4 class="title text-center mt-2 pb-3">Crea una cuenta</h4>
+
+                <form action="" class='col-sm-10 col-12 mx-auto'>
+                    <span id="texto_validacion"></span>
+                    <div class="form-group row">
+                        <div class="col">
+                            <input class="form-control" type="text" id="usuario" placeholder="Usuario" name="usuario">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="text" id="nombre" placeholder="Nombre" name="nombre">
+                        </div>
+                    </div>
+                        <div class='form-group py-3 ' style="margin-bottom: -10px;">
+                            <input class="form-control" type="email" id="email" placeholder="Correo Electronico"
+                            name="Correo Electronico">   
+                        </div>
+                    
+                        <div class='form-group py-3 ' style="margin-bottom: -10px;">
+                            <input class="form-control" type="password" id="clave" placeholder="Ingrese la contraseña" name="clave">
+                        </div>              
+                        <div class=''>
+                            <input class="btn1 d-block w-100" type="submit" value="Regístrate" id="btn_enviar">
+                        </div>
+                   
+                </form>
+
+                <div class="text-center mt-4 pb-3">
+                    ¿Ya tienes una cuenta?
+                    <a href="login.html">Inicia Sesión</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

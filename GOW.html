@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="96x96" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gow.css">
+
+    <title>God Of War - PlayZone</title>
+</head>
+
+<body>
+
+    <div class="menu-btn">
+        <i id="icon-nav" class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+        <!-- Nav -->
+        <nav class="main-nav">
+            <img src="images/playzone.png" alt="PlayZone" class="logo">
+
+            <ul class="main-menu">
+                <li><a id="text-nav" href="index.html">Inicio</a></li>
+                <li><a id="text-nav" href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a id="text-nav" href="carrito.html">Tienda</a></li>
+                <li><a id="text-nav" href="funcionamiento.html">Seguridad</a></li>
+            </ul>
+
+            <ul class="right-menu">
+                <li>
+                    <i id="icon-nav" class="fas fa-search"></i><a id="text-nav" class="buscar" onclick="showSearch()"
+                        href="#"> Buscar</a>
+                </li>
+                <div class="search-box">
+                    <form>
+                        <label for="searchTerm"></label>
+                        <input type="text" id="searchTerm" name="search">
+                        <input class="btn1" onclick="searchText()" type="submit" value="Buscar">
+                    </form>
+                </div>
+                <li class="carro-li">
+                    <i id="icon-nav" class="fas fa-shopping-cart"></i><a id="text-nav" class="carro" href="#"> Carro</a>
+                </li>
+                <li>
+                    <i id="icon-nav" class="fas fa-user"></i><a id="text-nav" class="user" href="login.html"> Iniciar
+                        Sesión
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Showcase -->
+    <header class="banner-gow">
+        <h1>Embárcate en un épico y cordial viaje mientras <br> Kratos y Atreus luchan por aferrarse y soltar</h1>
+        <p>Desde Santa Monica Studio llega la secuela del aclamado por <br> la crítica God of War (2018). Fimbulvetr ya
+            está
+            en camino. Kratos y Atreus <br> deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, <br>
+            mientras que las fuerzas asgardianas se preparan para una batalla profetizada <br> que terminará con el
+            mundo.
+            En el camino explorarán paisajes increíbles y <br> míticos, y se enfrentarán a aterradores enemigos en la
+            forma
+            de dioses <br> nórdicos y monstruos. La amenaza del Ragnarök cada vez está más cerca. <br> Kratos y Atreus
+            deben
+            elegir entre su propia seguridad y la seguridad de los reinos.</p>
+        <div class="btn-container">
+            <a href="carrito.html" class="btn-gow">
+                Comprar Ahora <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="container-gow">
+        <div class="column column__background column--active" data-column-item>
+            <h1 class="column-heading">Un futuro sin horizontes</h1>
+            <div class="column-inner">
+                <p>Atreus busca conocimiento que lo ayude a entender la profecía de "Loki" y establecer su rol en
+                    Ragnarök. Kratos debe decidir entre quedarse atado al miedo de repetir sus errores o librarse del
+                    pasado para ser el padre que Atreus necesita.</p>
+            </div>
+        </div>
+        <div class="column column__background" data-column-item>
+            <h1 class="column-heading">Instrumentos de guerra</h1>
+            <div class="column-inner">
+                <p>El hacha Leviatán, las Espadas del Caos y el Escudo de guardián regresan junto con una amplia
+                    variedad de nuevas habilidades para Kratos y Atreus. Las habilidades espartanas mortales de Kratos
+                    se pondrán a prueba como nunca antes, mientras pelea contra dioses y monstruos en los nueve reinos
+                    para proteger a su familia.</p>
+            </div>
+        </div>
+        <div class="column column__background" data-column-item>
+            <h1 class="column-heading">Explora inmensos reinos</h1>
+            <div class="column-inner">
+                <p>Viaja a través de peligrosos e increíbles paisajes a la vez que te enfrentas a una variedad de
+                    criaturas enemigas, monstruos y dioses nórdicos mientras que Kratos y Atreus buscan respuestas.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="texo-imagen-gow">
+        <h1>La mejor manera de vivir la mejor guerra que <br> han visto los nueve reinos</h1>
+        <p>¡Nuevo equipo, un límite de nivel aumentado, nuevos encantamientos y más se agregan en el modo NP+ <br> de God of War Ragnarök! Una vez que completes el juego, zambúllete de inmediato en una NP+ <br> guardada para volver a vivir la historia con muchas opciones de juego adicionales desde el principio.</p>
+    </div>
+
+
+    <div class="container-explain">
+
+        <div class="text">
+            <h1>Completamente optimizado para audio 3D**</h1>
+            <p>Sumérgete en los paisajes sonoros únicos de los nueve reinos mientras los sonidos reverberan y resuenan
+                por todo el medioambiente. Utiliza el audio espacial de alta precisión para escuchar a los enemigos que
+                se acercan desde cualquier dirección, incluso por encima y por debajo de ti.</p>
+        </div>
+        <div class="image">
+            <img class="image-gow" src="images/kratos2.jpg" alt="Imagen">
+        </div>
+
+    </div>
+
+    <div class="container-explain1">
+        <div class="image1">
+            <img class="image-gow1" src="images/go1.jpg" alt="Imagen">
+        </div>
+        <div class="text1">
+            <h1>Carga rápida mediante SSD</h1>
+            <p>Vuelve a la acción más rápido que nunca; el SSD (disco sólido) de alta velocidad de la consola PS5™ no te
+                hará esperar mucho para resucitar de la muerte. Disfruta de tiempos de carga reducidos desde los puntos
+                de control del juego, o al viajar rápidamente.</p>
+        </div>
+
+    </div>
+
+    <div class="container-explain">
+
+        <div class="text">
+            <h1>Gráficos increíbles</h1>
+            <p>Cambia entre la resolución 4K completa a 30 fotogramas por segundo o la resolución dinámica escalada en
+                4K a 60 fotogramas por segundo.* Disfruta de los hermosos mundos que por los que viajas, que cobran vida
+                gracias a una impresionante dirección de arte y sorprendentes detalles. Contempla la mejora de los
+                reflejos, la iluminación y las sombras, así como el aumento de los detalles geométricos y la mejora de
+                la nieve deformable.</p>
+        </div>
+        <div class="image">
+            <img class="image-gow" src="images/kratos.jpg" alt="Imagen">
+        </div>
+
+    </div>
+    <div class="container-explain1">
+        <div class="image1">
+            <img class="image-gow1" src="images/thor.jpg" alt="Imagen">
+        </div>
+        <div class="text1">
+            <h1>Control inalámbrico Dualsense™ integrado</h1>
+            <p>Siente tu viaje a través de los reinos nórdicos, gracias a la respuesta háptica inmersiva y a la
+                funcionalidad de gatillo adaptable.</p>
+        </div>
+
+    </div>
+    <!-- Links -->
+    <!-- Footer -->
+    <footer class="footer-gow">
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <a href="index.html"><img src="Images/playzone.png" alt="Logo PlayZone"></a>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Condiciones de uso y privacidad</h2>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Privacidad y cookies</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Acerca de</h2>
+                <a href="#">Quienes Somos</a>
+                <a href="#">Fiabilidad</a>
+                <a href="#">Procesos</a>
+                <a href="carrito.html">Tienda</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>PlayZone</b></p>
+        </div>
+    </footer>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/gow.js"></script>
+</body>
+
+</html>

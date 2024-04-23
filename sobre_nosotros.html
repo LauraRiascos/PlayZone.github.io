@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="96x96" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>PlayZone</title>
+</head>
+
+<body>
+   
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+        <!-- Nav -->
+        <nav class="main-nav">
+            <img src="images/playzone.png" alt="PlayZone" class="logo">
+
+            <ul class="main-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="carrito.html">Tienda</a></li>
+                <li><a href="funcionamiento.html">Seguridad</a></li>
+            </ul>
+
+            <ul class="right-menu">
+                <li>
+                    <i class="fas fa-search"></i><a class="buscar" onclick="showSearch()" href="#"> Buscar</a>
+                </li>
+                <div class="search-box">
+                    <form>
+                        <label for="searchTerm"></label>
+                        <input type="text" id="searchTerm" name="search">
+                        <input class="btn1" onclick="searchText()" type="submit" value="Buscar">
+                    </form>
+                </div>
+                <li class="carro-li">
+                    <i class="fas fa-shopping-cart"></i><a class="carro" href="#"> Carro</a>
+                </li>
+                <li>
+                    <i class="fas fa-user"></i><a class="user" href="login.html"> Iniciar Sesión
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+        <!-- Showcase -->
+        <div class="container-banner">
+        <header class="banner">
+            <h1 class="titulo-banner">Crece con un Equipo Profesional</h1>
+        </header>
+    </div>
+
+    <section id="cards">
+        <div class="container py-2">
+            <div class="row pt-5">
+                <div class="sec-title">
+                    <div class="title">Quiénes Somos</div>
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="row">
+                <div class="col-lg-12 col-md-6 mb-4 pt-1 mx-auto">
+
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="user-picture">
+                                <img src="images/Laura.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
+                            </div>
+                            <div class="user-content">
+                                <h5 class="text-capitalize user-name">Laura Riascos</h5>
+                                <p class=" text-capitalize text-muted small blockquote-footer">Desarrolladora Web</p>
+                                <div class="small">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-light"></i>
+                                </div>
+                                <p class="small text-muted mb-0">Creatividad es la definición de Laura, con habilidades especializadas en diseño visual, UX/UI y desarrollo web. Laura es la encargada de que PlayZone resalte y haya un buen manejo de la misma.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /cards -->
+    </section>
+        <section class="about-section">
+            <div class="container">
+                <div class="row clearfix">
+
+                    <!--Content Column-->
+                    <!-- <div style="text-align: center;"> -->
+                    <div class="content-column col-md-12 col-sm-12 col-xs-12">
+                        <div class="inner-column">
+                            <div class="sec-title">
+                                <div class="title">Conócenos</div>
+                            </div>
+                            <div class="text">En PlayZone nos especializamos en suministrar claves de CD – para poder
+                                ofrecer los precios más bajos y entrega instantánea a través de nuestro sistema
+                                automatizado único de entregas. Nuestro objetivo es ofrecer la mayor cantidad de puntos
+                                y suscripciones de Xbox live, tarjetas de Playstation Network y juegos/paquetes de
+                                expansión para PC a los mejores precios. Debido a
+                                nuestra extensa y confiable cadena de suministro y poder de adquisición, en PlayZone
+                                tenemos un gran volumen agregado de ventas - ¡y le otorgamos estas reducciones para así
+                                ofrecer el mejor precio del mercado!</div>
+                            <div class="text">
+                                Podemos ofrecer un servicio sin compromisos pues solo nos encargamos del envío digital
+                                de claves de CD. La clave de CD es el número de serial o código de producto, conformado
+                                por una combinación de letras y números, que se usa para activar un producto y que
+                                normalmente se encuentra en una etiqueta dentro del empaque del juego o impreso en la
+                                ficha de referencia del mismo. La clave de CD comprada se usa para registrar y activar
+                                el juego correspondiente. Dependiendo del producto, suministramos el código digitalizado
+                                o en formato de texto.
+                            </div>
+                            <div class="text">
+                                Hemos desarrollado un sistema único de entrega de claves de CD que permite una
+                                asignación de las mismas automática e instantánea. Una vez que el cliente realiza el
+                                pago y este se verifica, la clave de CD aparece en su cuenta de cdkeys.com y su email,
+                                lo que permite a nuestros clientes experimentar un servicio rápido, eficiente y personal
+                                – cuando lo deseen.
+                            </div>
+                            <div class="sec-title3">
+                                <div class="title">Pagos</div>
+                            </div>
+                            <div class="text">
+                                <ul style="list-style: circle;">
+                                    <li>Paypal – Simple, Seguro e Inmediato</li>
+                                    <li>Los precios se muestran en las monedas más importantes dependiendo de su
+                                        ubicación geográfica, y se cobran en Dólares Estadounidenses (USD) o pesos
+                                        Colombianos (COP).</li>
+                                </ul>
+                            </div>
+                            <div class="sec-title3">
+                                <div class="title">Entrega Digital</div>
+                            </div>
+                            <div class="text">
+                                <ul style="list-style: circle;">
+                                    <li>Todos nuestros productos se entregan digitalmente a través de nuestro sistema en
+                                        líneas en tan solo segundos.</li>
+                                    <li>Todas las órdenes están sujetas a verificación de seguridad que podría ocasionar
+                                        un breve retraso</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <a href="about.html" class="theme-btn btn-style-three">Leer Más</a> -->
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <!--Image Column-->
+                <!-- <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="image">
+                                <img src="https://i.ibb.co/vQbkKj7/about.jpg" alt="">
+                                <div class="overlay-box">
+                                    <div class="year-box"><span class="number">5</span>Years <br> Experience <br>
+                                        Working</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+            </div>
+    
+    </section>
+
+    </div>
+    <!-- Links -->
+    <!-- Footer -->
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <a href="index.html"><img src="Images/playzone.png" alt="Logo PlayZone"></a>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Condiciones de uso y privacidad</h2>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Privacidad y cookies</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Acerca de</h2>
+                <a href="#">Quienes Somos</a>
+                <a href="#">Fiabilidad</a>
+                <a href="#">Procesos</a>
+                <a href="carrito.html">Tienda</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>PlayZone</b></p>
+        </div>
+    </footer>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

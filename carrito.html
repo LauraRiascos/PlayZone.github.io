@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/ico.png" sizes="96x96" />
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/carrito.js" async></script>
+    <title>PlayZone</title>
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+        <!-- Nav -->
+        <nav class="main-nav">
+            <img src="images/playzone.png" alt="PlayZone" class="logo">
+
+            <ul class="main-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="carrito.html">Tienda</a></li>
+                <li><a href="funcionamiento.html">Seguridad</a></li>
+            </ul>
+
+            <ul class="right-menu">
+                <li>
+                    <i class="fas fa-search"></i><a class="buscar" onclick="showSearch()" href="#"> Buscar</a>
+                </li>
+                <div class="search-box">
+                    <form>
+                        <label for="searchTerm"></label>
+                        <input type="text" id="searchTerm" name="search">
+                        <input class="btn1" onclick="searchText()" type="submit" value="Buscar">
+                    </form>
+                </div>
+                <li class="carro-li">
+                    <i class="fas fa-shopping-cart"></i><a class="carro" href="#"> Carro</a>
+                </li>
+                <li>
+                    <i class="fas fa-user"></i><a class="user" href="login.html"> Iniciar Sesión
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Nuevos juegos increíbles</h1>
+        <p>Comienza una nueva temporada de juegos con PlayZone</p>
+    </header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Elden Ring</span>
+                <br>
+                <img src="images/eldenring.jpg" alt="Elden ring" class="img-item">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Resident Evil 4</span>
+                <br>
+                <img src="images/residentevil4.jpg" alt="Resident Evil 4" class="img-item">
+                <span class="precio-item">$25.000</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Hogwarts Legacy</span>
+                <br>
+                <img src="images/hogwarts.jpg" alt="" class="img-item">
+                <span class="precio-item">$35.000</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">The Sims 4: Growing Together</span>
+                <img src="images/sims4dlc.jpg" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Grand Thef Auto V</span>
+                <br>
+                <img src="images/gta.jpg" alt="Grand Thef Auto V" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Minecraft</span>
+                <br>
+                <img src="images/minecraft.jpg" alt="Minecraft" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Red Dead Redeption II</span>
+                <br>
+                <img src="images/RDR2.jpg" alt="Red Dead Redeption II" class="img-item">
+                <span class="precio-item">$54.000</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Resident Evil 3</span>
+                <br>
+                <img src="images/residentevil3.jpg" alt="Resident Evil 3" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Spider Man: Miles Morales</span>
+                <img src="images/spiderman.jpg" alt="Spider Man: Miles Morales" class="img-item">
+                <span class="precio-item">$42.800</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">God Of War</span>
+                <img src="images/GOWpc.jpg" alt="God Of War" class="img-item">
+                <span class="precio-item">$92.800</span>
+                <button class="boton-item">Agregar al Carrito <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="images/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <a href="index.html"><img src="Images/playzone.png" alt="Logo PlayZone"></a>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Condiciones de uso y privacidad</h2>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Privacidad y cookies</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Acerca de</h2>
+                <a href="#">Quienes Somos</a>
+                <a href="#">Fiabilidad</a>
+                <a href="#">Procesos</a>
+                <a href="carrito.html">Tienda</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>PlayZone</b></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
